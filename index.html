@@ -1,0 +1,112 @@
+<html>
+    <head>
+    <title>command form</title>
+    <style>
+         body{
+           background: linear-gradient(to right,rgba(255, 0, 140, 0.664),green);
+           }
+           h1{
+            text-align: center;
+            padding-top: 40px;
+            color: rgb(134, 30, 12);
+           }
+           h1:hover{
+            color: rgb(255,255,255);
+           }
+           h3{
+            padding-top: 20px;
+            text-align: center ;
+            color:rgb(97,12,134);
+           }
+           h3:hover{
+            padding-top: 20px;
+            text-align: center ;
+            color:white;
+           }
+           #text:hover{
+            border-radius: 10px;
+            margin: auto;
+            display:flex;
+            width: 165px;
+            box-shadow: 10px 10px rgb(112,3,158);
+           }
+           #iptext{
+            border:none;
+            height: 60px;
+            align-content: center; 
+            margin: auto;
+            display: flex;
+            justify-content: center; 
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(226, 43, 217);
+            background-color: rgb(208, 248, 208);
+           }
+           #iptext-hover {
+            width: 165px;
+            align-content: center;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            text-align: center;
+           }
+           
+           #sub{
+            height: 30px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            color: antiquewhite;
+            padding-top: 10px;
+            text-align: center;
+           }
+        
+           #but{
+            color: blueviolet;
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+           }
+           #but:hover{
+            background-color: blueviolet;
+            color: white;
+            box-shadow: 5px 10px rgb(89, 2 ,118);
+           }
+           #disp{
+            text-align: center;
+           
+            color: rgb(255,255,255);
+            font-size: 20px;
+           }
+           #disp:hover{
+            
+            text-align: center;
+            color: rgb(57,2,72);
+            font-size: 20px;
+
+           }
+    </style>
+    <script>
+        function displayfn(){
+            var text = document.getElementById("iptext").value;
+            document.getElementById("disp").innerText=text;
+        }
+    </script>
+    
+    </head>
+     <body>
+        <h1>Text Area</h1>
+        <h3>task one</h3>
+        <div id="text">
+            <input type="text" name="your_name" id="iptext" placeholder="text"> 
+        </div id="sub">
+            <button id="but" onclick="displayfn()"><b>disply</b></button>
+        </div>
+        <div>
+           <h3>you entered:</h3>
+           <div id="disp"></div>
+        </div>
+         </body>
+</html>
